@@ -1,0 +1,50 @@
+
+
+ <div class="row g-0"mat-dialog-close="true">
+            <h2><span class="ic me-3">x</span></h2>
+          </div>      
+
+<div class="row g-0">
+  <div class="card1 p-4">
+    <h3 class="login">Login</h3>
+    <div class="form-outline mb-4">
+      <label class="form-label">Mobile Number</label>
+      <input
+        type="number"
+        class="form-control form-control-lg"
+        placeholder="Mobile number"
+      />
+      <h5 style="margin-top: 10px;">We'll Send an OTP for Verification</h5>
+    </div>
+    <!-- <div class="form-outline mb-4">
+      <label class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control form-control-lg"
+        placeholder="Password"
+      />
+    </div> -->
+
+    <!-- <div class="row lastlogin text-center">
+      <button class="btn btn-primary" routerLink="/sidebar">Request OTP</button>
+    </div> -->
+<!--       
+       <button class="btn btn-primary">Request OTP</button> -->
+   
+    <div class="row lastlogin text-center">
+      <app-otp *ngIf="showOtpComponent"></app-otp>
+    <button (click)="toggleOtpComponent()" class="btn btn-primary" [class.button-clicked]="buttonClicked">{{ buttonName}}</button>
+  
+  </div> 
+
+
+    <br />
+    <p>By continuing, you agree to Pinterest's</p>
+    <p><b>Terms of Service;</b>Opens a new tab and acknowledge you've read</p>
+    <p><b>Privacy Policy;Notice at collection;</b></p>
+  </div>
+</div>
+<div>
+  
+</div>
+

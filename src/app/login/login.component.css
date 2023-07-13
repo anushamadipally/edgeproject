@@ -1,0 +1,28 @@
+.login{
+    margin-bottom: 30px; 
+    text-align: center;
+    font-size: 23px; 
+    font-weight: bold;        
+}
+.lastlogin {
+width: 80%;
+margin: auto;
+}
+p{
+    text-align: center;
+  
+}
+.form-label{
+    font-size: 16px;
+    }
+.form-control{
+font-size: 13px;
+}
+.ic{
+    float: right;
+    font-size: 25px !important;
+}
+.button-clicked {
+    background-color: rgb(23, 23, 91);
+    border: none;
+  }

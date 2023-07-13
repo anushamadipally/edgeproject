@@ -1,0 +1,103 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar class="menu">
+     Menu
+    </mat-toolbar>
+    <mat-nav-list>
+      <div class="text-center mt-4">
+        <a class="links" routerLink="home"
+          ><mat-icon routerLinkActive="active">home</mat-icon><br />Home</a
+        ><div class="course mt-3">
+        <a class="links" routerLink="courses"
+          ><mat-icon routerLinkActive="active">chrome_reader_mode</mat-icon><br/>Courses</a
+        ></div>
+        <div class="games mt-3">
+        <a class="links" routerLink="sidenav/home"
+          ><mat-icon routerLinkActive="active">games</mat-icon><br />Games</a
+        ></div>
+        <div class="brain mt-3">
+        <a class="links" routerLink="sidenav/home"
+          ><mat-icon routerLinkActive="active">ac_unit</mat-icon><br />Brain</a
+        ></div>
+        <div class="profile mt-3">
+        <a class="links" routerLink="sidenav/home"
+          ><mat-icon routerLinkActive="active">supervisor_account</mat-icon><br />Profile</a
+        >
+      </div>
+      
+      <!-- <div style="bottom: 50px; position: fixed">
+       
+        >
+        <a class=""
+          ><span style="color: white; font-size: 18px"
+            ><mat-icon>settings_system_daydream</mat-icon> Directory</span
+          ></a
+        >
+      </div> -->
+     
+      </div>
+
+    
+    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="navbar">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+     
+      <div class="bg">
+      <span class=""><img class="logo-name" src="assets/edge2.png"></span>      
+      <span class="welcome p-2"> Welcome Back, <span style="color: black;">M.K.Chaithaya</span> </span>
+      </div>
+    
+ 
+<button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">OPen Page</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h4 id="offcanvasRightLabel">Images</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="brain" src="assets/black.png" width="350rem">
+      </div>
+    </div>
+    <div class="row p-4">
+
+      <div class="card p-4">
+        <h4 style="text-align: center; font-weight: bold;"> your learning profile</h4>
+      <div class="col-sm-6">
+    <img class="brain" src="assets/brain.jpeg" width="280rem">
+  </div>
+      </div>
+    </div>
+    <div class="row p-4">
+      <div class="col-sm-6">
+    <img class="brain" src="assets/black.png" width="330rem">
+      </div>
+    </div>
+  </div>
+</div>
+
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

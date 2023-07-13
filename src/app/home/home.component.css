@@ -1,0 +1,14 @@
+.card{
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            
+}
+  h3{
+font-weight: bold;
+  }           
+.btn{
+ margin-bottom: -8px;
+padding: 5px 18px 5px;
+border: none;
+}
+.right-button {
+float: right;
+}

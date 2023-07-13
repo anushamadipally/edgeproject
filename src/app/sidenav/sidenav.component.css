@@ -1,0 +1,64 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 90px;
+  background-color: black;
+}
+.mat-icon {
+  color: rgb(253, 252, 252);
+  margin-bottom: 0;
+
+}
+
+.mat-nav-list .mat-list-item {
+  color: white !important;
+}
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.links  {
+ color: white !important;
+ text-decoration: none;
+}
+.menu{
+color: rgb(248, 124, 9) !important; 
+}
+.active{
+  color: rgb(33, 6, 185) !important;
+}
+
+
+.navbar {
+  background-color: rgb(251, 251, 251);
+  color: rgb(12, 12, 12);
+}
+.welcome{
+  color: white;
+  
+}
+.bg{
+  background-color: blue !important ;
+  border-radius: 0px 20px 20px 0px;
+}
+.logo-name{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: white;
+}
+.brain{
+  border-radius: 60px;
+ 
+}
+.card{
+  background-color: rgb(230, 228, 228);
+
+}
