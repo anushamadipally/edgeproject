@@ -6,12 +6,12 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./otp.component.css']
 })
 export class OtpComponent implements OnInit , OnDestroy {
-  otp1!: string;
-  otp2!: string;
-  otp3!: string;
-  otp4!: string;
-  otp5!: string;
-  otp6!: string;
+  otp1!: Number;
+  otp2!: Number;
+  otp3!: Number;
+  otp4!: Number;
+  otp5!: Number;
+  otp6!: Number;
 
 
   remainingTime ! : string;
@@ -36,5 +36,13 @@ export class OtpComponent implements OnInit , OnDestroy {
   ngOnDestroy() {
     clearInterval(this.timerId);
   }
-
+  validateInput(event: any) {
+    const input = event.target;
+    const numericValue = input.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+  
+    if (numericValue !== input.value) {
+      input.value = numericValue; // Update the input value with only numbers
+    }
+  }
+  
 }

@@ -4,7 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { AgmCoreModule } from '@agm/core';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -22,26 +23,32 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CoursesComponent } from './courses/courses.component';
 import { OtpComponent } from './otp/otp.component';
-
+import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GamesComponent } from './games/games.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    SignupComponent,
+  
     HomeComponent,
     SidebarComponent,
     SidenavComponent,
      CoursesComponent,
      OtpComponent,
-
+     SignupComponent,
+     GamesComponent,
+   
+   
        
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatInputModule,
     MatFormFieldModule,
     MatDialogModule,
@@ -54,7 +61,7 @@ import { OtpComponent } from './otp/otp.component';
     MatListModule,
     MatSidenavModule,
     MatDialogModule,
-   
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

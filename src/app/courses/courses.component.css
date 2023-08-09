@@ -1,21 +1,94 @@
-.card{
-              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            
-             }
-               h3{
-             font-weight: bold;
-               }           
-             .btn{
-              margin-bottom: -8px;
-             padding: 5px 18px 5px;
-             border: none;
-             }
-             .right-button{
-             float: right !important;
-             
-             }
-             .fa{
-              float: right;
-             }
-             .i {
-              margin-right: 8px;
-            }
+/* .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
+
+.card {
+  margin: 28px auto;
+  width: 220px;
+  height: 90px;
+  border-radius: 15px;
+ box-shadow: 1px 1px 2px 1px rgba(202, 201, 201, 0.25), -1px -1px 2px 1px rgba(214, 211, 211, 0.22);
+
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -40px;
+  height: 40px;
+}
+/* 
+.card:hover {
+  transform: scale(0.9, 0.9);
+ 
+} */
+
+.title-white {
+  color: rgb(117, 6, 2);
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+h2{
+  font-size: 35px;
+  font-weight: bold;
+  margin: 28px auto;
+
+  color: rgb(184, 184, 186) !important;
+}
+.dashed{
+ border-style: dashed;
+ background-color: rgb(13 12 12);
+ width: 80%;
+ margin-left: 121px;
+ height: 100%;
+ border-radius: 10px;
+ border-color: rgb(192, 189, 189);
+}
+.search{
+padding: 45px !important;
+}
+.buttons{
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+padding: 15px;
+border-radius: 10px;
+}
+.white{
+  border-radius: 10px;
+}
+h3{
+  font-weight: bold !important;
+  font-size: 20px;
+}

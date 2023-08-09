@@ -1,17 +1,11 @@
-<!-- <div>
-<input type="text" maxlength="1" [(ngModel)]="otp1">
-<input type="text" maxlength="1" [(ngModel)]="otp2">
-<input type="text" maxlength="1" [(ngModel)]="otp3">
-<input type="text" maxlength="1" [(ngModel)]="otp4">
+
+<div class="otp-container">
+  <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp1" (input)="validateInput($event)">
+<input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp2" (input)="validateInput($event)">
+<input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp3" (input)="validateInput($event)">
+<input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp4" (input)="validateInput($event)">
+ <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp5" (input)="validateInput($event)">
+ <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp6" (input)="validateInput($event)">
 </div>
-             -->
-             <div class="otp-container">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp1">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp2">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp3">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp4">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp5">
-              <input class="otp-input" type="text" maxlength="1" [(ngModel)]="otp6">
-            </div>
-            <h5>Enter OTP to Continue</h5>
-            <p><b>Resend OTP in:</b> {{ remainingTime.toString() }} seconds</p>
+ <h5>Enter OTP to Continue</h5>
+ <p><b>Resend OTP in:</b> {{ remainingTime.toString() }} seconds</p>
